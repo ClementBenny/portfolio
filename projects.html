@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Clement Benny</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .showroom-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 6rem;
+        }
+
+        .project-showcase {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 4rem;
+            background-color: var(--bg-card);
+            border: 1px solid var(--accent-light);
+            padding: 3rem;
+            transition: var(--transition-smooth);
+        }
+
+        .project-showcase:hover {
+            border-color: var(--accent-clay);
+            box-shadow: 0 10px 30px rgba(163, 138, 117, 0.05);
+        }
+
+        .project-meta h3 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-stack {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent-clay);
+            margin-bottom: 2rem;
+        }
+
+        .project-description {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature-panel {
+            background-color: var(--bg-surface);
+            padding: 2rem;
+            border-left: 3px solid var(--accent-clay);
+        }
+
+        .feature-panel h4 {
+            font-family: var(--font-sans);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-list li {
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.2rem;
+            color: var(--text-muted);
+            transition: var(--transition-smooth);
+        }
+
+        .feature-list li:hover {
+            color: var(--text-primary);
+            transform: translateX(3px);
+        }
+
+        .feature-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent-clay);
+        }
+
+        @media (max-width: 992px) {
+            .project-showcase {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Clement Benny</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="container section">
+            <h2 class="section-title">My Projects</h2>
+            
+            <div class="showroom-grid">
+
+                <div class="project-showcase">
+                    <div class="project-meta">
+                        <h3>Dentique</h3>
+                        <div class="project-stack">ASP.NET / MySQL</div>
+                        <p class="project-description">
+                            A web-based appointment booking web app built for dental clinics to manage doctor schedules, client data, and patient tracks easily.
+                        </p>
+                    </div>
+                    <div class="feature-panel">
+                        <h4>Core System Capabilities</h4>
+                        <ul class="feature-list">
+                            <li>Real-time slot checking and automated booking management</li>
+                            <li>Secure database storing patient details and medical records</li>
+                            <li>Clean dashboard layouts for dental staff to oversee daily appointments</li>
+                            <li>Responsive booking forms accessible on both desktops and mobile layouts</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-showcase">
+                    <div class="project-meta">
+                        <h3>AutoVibe</h3>
+                        <div class="project-stack">Angular / BootStrap / Tailwind CSS</div>
+                        <p class="project-description">
+                            An online car marketplace designed to display clean vehicle specifications and price trends with highly responsive search adjustments.
+                        </p>
+                    </div>
+                    <div class="feature-panel">
+                        <h4>Core System Capabilities</h4>
+                        <ul class="feature-list">
+                            <li>Advanced, interactive vehicle discovery with deep filtering features</li>
+                            <li>Beautiful layouts presenting clear car specifications and dimensions</li>
+                            <li>Accurate, inline pricing metrics set directly in Indian Rupees (INR)</li>
+                            <li>Smooth image sliders and media galleries built natively into cards</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-showcase">
+                    <div class="project-meta">
+                        <h3>Farm Direct</h3>
+                        <div class="project-stack">Laravel / Eloquent / SQLite</div>
+                        <p class="project-description">
+                            An agricultural supply chain platform connecting local farmers with wholesale dealers and customers through light, efficient database structures.
+                        </p>
+                    </div>
+                    <div class="feature-panel">
+                        <h4>Core System Capabilities</h4>
+                        <ul class="feature-list">
+                            <li>Fast tracking of local crop stocks using a optimized SQLite database setup</li>
+                            <li>Clean relationship logic linking system user roles straight to product stocks</li>
+                            <li>Live delivery milestones showing Pending, Processing, and Out for Delivery statuses</li>
+                            <li>Interactive dashboards with responsive hover animations on all elements</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Clement Benny. All rights reserved.</p>
+            <p>Built with Architecture & Purpose.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

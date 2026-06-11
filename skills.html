@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills — Clement Benny</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .skills-grid {
+            display: grid;
+            /* Explicit 2x2 grid framework for balanced columns */
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+        }
+
+        .skills-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--accent-light);
+            padding: 2.5rem;
+            transition: var(--transition-smooth);
+        }
+
+        .skills-card:hover {
+            border-color: var(--accent-clay);
+            transform: translateY(-4px);
+        }
+
+        .skills-card-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--bg-surface);
+            padding-bottom: 0.5rem;
+        }
+
+        .skills-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        .skills-item {
+            background-color: var(--bg-surface);
+            color: var(--text-primary);
+            padding: 0.4rem 1rem;
+            font-size: 0.85rem;
+            letter-spacing: 0.02em;
+            text-transform: none;
+        }
+
+        /* Seamless mobile collapsing rules */
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Clement Benny</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="container section">
+            <h2 class="section-title">Core Technical Capabilities</h2>
+            
+            <div class="skills-grid">
+                
+                <!-- Row 1, Box 1: Languages -->
+                <div class="skills-card">
+                    <h3 class="skills-card-title">Languages</h3>
+                    <ul class="skills-list">
+                        <li class="skills-item">PHP</li>
+                        <li class="skills-item">TypeScript</li>
+                        <li class="skills-item">JavaScript (ES6+)</li>
+                        <li class="skills-item">Java</li>
+                        <li class="skills-item">C</li>
+                        <li class="skills-item">C++</li>
+                        <li class="skills-item">Python</li>
+                        <li class="skills-item">SQL</li>
+                        <li class="skills-item">HTML5 / CSS3</li>
+                    </ul>
+                </div>
+
+                <!-- Row 1, Box 2: Frameworks & Tooling -->
+                <div class="skills-card">
+                    <h3 class="skills-card-title">Frameworks & Tooling</h3>
+                    <ul class="skills-list">
+                        <li class="skills-item">Laravel (Blade/Eloquent)</li>
+                        <li class="skills-item">Angular</li>
+                        <li class="skills-item">ASP.NET</li>
+                        <li class="skills-item">Node.js / Express</li>
+                        <li class="skills-item">RESTful APIs</li>
+                    </ul>
+                </div>
+
+                <!-- Row 2, Box 1: Interface & Styling -->
+                <div class="skills-card">
+                    <h3 class="skills-card-title">Interface & Styling</h3>
+                    <ul class="skills-list">
+                        <li class="skills-item">Tailwind CSS</li>
+                        <li class="skills-item">CSS3 Modern Layouts</li>
+                        <li class="skills-item">HTML5 Semantic Design</li>
+                        <li class="skills-item">Bootstrap</li>
+                    </ul>
+                </div>
+
+                <!-- Row 2, Box 2: Soft Skills -->
+                <div class="skills-card">
+                    <h3 class="skills-card-title">Soft Skills</h3>
+                    <ul class="skills-list">
+                        <li class="skills-item">Problem Solving</li>
+                        <li class="skills-item">Team Collaboration</li>
+                        <li class="skills-item">Clear Communication</li>
+                        <li class="skills-item">Time Management</li>
+                        <li class="skills-item">Adaptability</li>
+                        <li class="skills-item">Analytical Thinking</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Clement Benny. All rights reserved.</p>
+            <p>Built with Architecture & Purpose.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience — Clement Benny</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 1px;
+            background-color: var(--accent-light);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 3rem;
+            margin-bottom: 4.5rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -4px;
+            top: 0.5rem;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background-color: var(--accent-clay);
+            transition: var(--transition-smooth);
+        }
+
+        .timeline-item:hover::before {
+            background-color: var(--text-primary);
+            transform: scale(1.4);
+        }
+
+        .time-frame {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent-clay);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-title {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-institution {
+            font-size: 1rem;
+            color: var(--text-primary);
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .timeline-content {
+            color: var(--text-muted);
+            max-width: 650px;
+            line-height: 1.6;
+        }
+
+        /* Certificate Button Styling */
+        .certificate-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-primary);
+            background-color: var(--bg-surface);
+            border: 1px solid var(--accent-light);
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+
+        .certificate-link:hover {
+            border-color: var(--accent-clay);
+            color: var(--accent-clay);
+            transform: translateY(-1px);
+        }
+
+        .pdf-icon {
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Clement Benny</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html" class="active">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="container section">
+            <h2 class="section-title">Academic & Professional Timeline</h2>
+            
+            <div class="timeline">
+                
+                <!-- Broader Current Focus Domain -->
+                <div class="timeline-item">
+                    <div class="time-frame">Professional Objective</div>
+                    <h3 class="timeline-title">Software Engineering & Systems Development</h3>
+                    <div class="timeline-institution">Adaptive Technology Application</div>
+                    <p class="timeline-content">
+                        Focused on leveraging core software engineering principles, modern frameworks, and analytical problem-solving to design and maintain scalable IT solutions. Committed to clean code practices, system architecture, and collaborating across diverse development lifecycles.
+                    </p>
+                </div>
+
+                <!-- Internship at NeST Digital -->
+                <div class="timeline-item">
+                    <div class="time-frame">6-Month Internship</div>
+                    <h3 class="timeline-title">Internship — Angular Developer</h3>
+                    <div class="timeline-institution">NeST Digital, Kakkanad</div>
+                    <p class="timeline-content">
+                        Gained enterprise-level software delivery experience implementing client-side application structures. Collaborated with development squads to engineer component-driven user environments, optimizing web views for performance, architectural scalability, and clean data integration.
+                    </p>
+                    <!-- Integrated link to the PDF file -->
+                    <a href="nest.pdf" target="_blank" class="certificate-link">
+                        <svg class="pdf-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        View Internship Document
+                    </a>
+                </div>
+
+                <!-- MCA -->
+                <div class="timeline-item">
+                    <div class="time-frame">2022 - Present</div>
+                    <h3 class="timeline-title">Integrated Master of Computer Applications (MCA)</h3>
+                    <div class="timeline-institution">De Paul Institute of Science and Technology (DiST), Angamaly</div>
+                    <p class="timeline-content">
+                        Advanced specialized academic track focusing on foundational computer science paradigms, robust systems architectural patterns, database management design, and practical execution.
+                    </p>
+                </div>
+
+                <!-- Higher Secondary -->
+                <div class="timeline-item">
+                    <div class="time-frame">2020 - 2022</div>
+                    <h3 class="timeline-title">Higher Secondary Education </h3>
+                    <div class="timeline-institution">St. Xavier's Public School, Peechanikadu</div>
+                    <p class="timeline-content">
+                        Completed higher secondary education with a strong emphasis on core sciences and mathematics, establishing the analytical groundwork necessary for technical analysis and reasoning.
+                    </p>
+                </div>
+
+                <!-- High School -->
+                <div class="timeline-item">
+                    <div class="time-frame">Graduated 2020</div>
+                    <h3 class="timeline-title">Primary & High School Education </h3>
+                    <div class="timeline-institution">Don Bosco Central School, Angamaly</div>
+                    <p class="timeline-content">
+                        Completed foundational primary and secondary schooling, cultivating early academic discipline, structural thinking, and core problem-solving skills.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Clement Benny. All rights reserved.</p>
+            <p>Built with Architecture & Purpose.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
